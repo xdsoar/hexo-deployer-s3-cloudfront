@@ -26,6 +26,7 @@ deploy:
   aws_key: <AWS id key>  // Optional, if the environment variable `AWS_KEY` is set
   aws_secret: <AWS secret key>  // Optional, if the environment variable `AWS_SECRET` is set
   concurrency: <number of connections> // Optional
+  force_overwrite: <true/false> // Optional: If existing files should be forcefully overwritten on S3. Default: true
   region: <region>  // Optional, default: us-standard
   cf_distribution: <cloudfront distribution> // Which distribution should be invalidated?
 ```

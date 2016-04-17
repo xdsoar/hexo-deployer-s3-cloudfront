@@ -1,6 +1,6 @@
 {
   "name": "hexo-deployer-s3-cloudfront",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Amazon S3 and Cloudfront deployer plugin for Hexo",
   "main": "index",
   "keywords": [
@@ -10,17 +10,23 @@
     "aws",
     "deployer"
   ],
-  "author": "Wouter van Lent <woutervanlent@gmail.com>",
-  "contributors": [{
+  "author": {
     "name": "Wouter van Lent",
     "email": "woutervanlent@gmail.com"
-  },{
-    "name": "Josh Strange",
-    "email": "josh@joshstrange.com"
-  }],
+  },
+  "contributors": [
+    {
+      "name": "Wouter van Lent",
+      "email": "woutervanlent@gmail.com"
+    },
+    {
+      "name": "Josh Strange",
+      "email": "josh@joshstrange.com"
+    }
+  ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/Wouter33/hexo-deployer-s3-cloudfront.git"
+    "url": "git+https://github.com/Wouter33/hexo-deployer-s3-cloudfront.git"
   },
   "license": {
     "type": "MIT"
@@ -30,9 +36,20 @@
   },
   "dependencies": {
     "chalk": "^1.0.0",
-    "level": "^0.18.0",
+    "level": "^1.4.0",
     "readdirp": "^0.3.3",
-    "s3-sync": "^0.5.1",
+    "s3-sync": "^1.0.1",
     "cloudfront": "^0.3.3"
-  }
+  },
+  "readme": "# hexo-deployer-s3-cloudfront\n\nAmazon S3 and Cloudfront deployer plugin for [Hexo](http://hexo.io/). Based on Josh Strange's orginial plugin.\n\n## Installation\n\n``` bash\n$ npm install hexo-deployer-s3-cloudfront --save\n```\n\n## Usage\n\nAdd the plugin in the plugins list in `_config.yml`:\n\n```plugins:\n- hexo-deployer-s3-cloudfront\n```\n\nand configure the plugin in the same file with:\n\n``` yaml\n# You can use this:\ndeploy:\n  type: s3-cloudfront\n  bucket: <S3 bucket>\n  aws_key: <AWS id key>  // Optional, if the environment variable `AWS_KEY` is set\n  aws_secret: <AWS secret key>  // Optional, if the environment variable `AWS_SECRET` is set\n  concurrency: <number of connections> // Optional\n  region: <region>  // Optional, default: us-standard\n  cf_distribution: <cloudfront distribution> // Which distribution should be invalidated?\n```\n\n## Contributors\n\n- Wouter van Lent ([wouter33](https://github.com/wouter33))\n- Josh Strange ([joshstrange](https://github.com/joshstrange); original implementation)\n\n## License\n\nMIT\n",
+  "readmeFilename": "README.md",
+  "gitHead": "b11763402c829db57a83861398d4ffb78d40516b",
+  "bugs": {
+    "url": "https://github.com/Wouter33/hexo-deployer-s3-cloudfront/issues"
+  },
+  "homepage": "https://github.com/Wouter33/hexo-deployer-s3-cloudfront#readme",
+  "_id": "hexo-deployer-s3-cloudfront@0.1.0",
+  "scripts": {},
+  "_shasum": "4c20c46b757e1d031f1fdc20fa98155cfa4d7736",
+  "_from": "hexo-deployer-s3-cloudfront@>=0.1.0 <0.2.0"
 }
