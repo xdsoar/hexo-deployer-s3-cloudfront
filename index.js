@@ -1,1 +1,1 @@
-hexo.extend.deployer.register('s3', require('./lib/deployer'));
+hexo.extend.deployer.register('s3-cloudfront', require('./lib/deployer'));

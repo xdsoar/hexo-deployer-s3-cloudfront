@@ -1,30 +1,38 @@
-# hexo-deployer-s3 
+# hexo-deployer-s3-cloudfront
 
-Amazon S3 deployer plugin for [Hexo](http://hexo.io/)
+Amazon S3 and Cloudfront deployer plugin for [Hexo](http://hexo.io/). Based on Josh Strange's orginial plugin.
 
 ## Installation
 
 ``` bash
-$ npm install hexo-deployer-s3 --save
+$ npm install hexo-deployer-s3-cloudfront --save
 ```
 
-## Options
+## Usage
 
-You can configure this plugin in `_config.yml`.
+Add the plugin in the plugins list in `_config.yml`:
+
+```plugins:
+- hexo-deployer-s3-cloudfront
+```
+
+and configure the plugin in the same file with:
 
 ``` yaml
 # You can use this:
 deploy:
-  type: s3
+  type: s3-cloudfront
   bucket: <S3 bucket>
   aws_key: <AWS id key>  // Optional, if the environment variable `AWS_KEY` is set
   aws_secret: <AWS secret key>  // Optional, if the environment variable `AWS_SECRET` is set
   concurrency: <number of connections> // Optional
-  region: <region>  // Optional, see https://github.com/LearnBoost/knox#region
+  region: <region>  // Optional, default: us-standard
+  cf_distribution: <cloudfront distribution> // Which distribution should be invalidated?
 ```
 
 ## Contributors
 
+- Wouter van Lent ([wouter33](https://github.com/wouter33))
 - Josh Strange ([joshstrange](https://github.com/joshstrange); original implementation)
 
 ## License

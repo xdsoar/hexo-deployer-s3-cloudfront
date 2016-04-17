@@ -1,22 +1,26 @@
 {
-  "name": "hexo-deployer-s3",
+  "name": "hexo-deployer-s3-cloudfront",
   "version": "0.1.0",
-  "description": "Amazon S3 deployer plugin for Hexo",
+  "description": "Amazon S3 and Cloudfront deployer plugin for Hexo",
   "main": "index",
   "keywords": [
     "hexo",
     "s3",
+    "cloudfront",
     "aws",
     "deployer"
   ],
-  "author": "Nicholas Terwoord <nicholas.terwoord+code@gmail.com>",
+  "author": "Wouter van Lent <woutervanlent@gmail.com>",
   "contributors": [{
+    "name": "Wouter van Lent",
+    "email": "woutervanlent@gmail.com"
+  },{
     "name": "Josh Strange",
     "email": "josh@joshstrange.com"
   }],
   "repository": {
     "type": "git",
-    "url": "http://github.com/nt3rp/hexo-deployer-s3.git"
+    "url": "https://github.com/Wouter33/hexo-deployer-s3-cloudfront.git"
   },
   "license": {
     "type": "MIT"
@@ -28,6 +32,7 @@
     "chalk": "^1.0.0",
     "level": "^0.18.0",
     "readdirp": "^0.3.3",
-    "s3-sync": "^0.5.1"
+    "s3-sync": "^0.5.1",
+    "cloudfront": "^0.3.3"
   }
 }
