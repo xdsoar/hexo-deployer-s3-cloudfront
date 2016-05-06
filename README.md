@@ -35,6 +35,7 @@ deploy:
 
 - Wouter van Lent ([wouter33](https://github.com/wouter33))
 - Josh Strange ([joshstrange](https://github.com/joshstrange); original implementation)
+- Josenivaldo Benito Jr. ([JrBenito](https://github.com/jrbenito))
 
 ## License
 
