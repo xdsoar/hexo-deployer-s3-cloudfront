@@ -28,7 +28,7 @@ deploy:
   concurrency: <number of connections> // Optional
   force_overwrite: <true/false> // Optional: If existing files should be forcefully overwritten on S3. Default: true
   region: <region>  // Optional, default: us-standard
-  cf_distribution: <cloudfront distribution> // Which distribution should be invalidated?
+  cf_distribution: <cloudfront distribution> // Optional: Which distribution should be invalidated?
   headers: <headers in JSON format> // pass any headers to S3, usefull for metadata cache setting of Hexo assets
 ```
 #### Example: header Cache-Control
