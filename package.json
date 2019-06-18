@@ -1,6 +1,6 @@
 {
   "name": "hexo-deployer-s3-cloudfront-xdsoar",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "index",
   "dependencies": {
     "chalk": "^1.0.0",

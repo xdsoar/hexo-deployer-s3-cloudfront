@@ -79,7 +79,7 @@ module.exports = function(args) {
       if(args.cf_distribution){
         log.info('Invalidating Cloudfront distribution now');
         var cf = cloudfront.createClient(config.s3Options.accessKeyId, config.s3Options.secretAccessKey);
-        var cfPath = '/' + args.prefix + '*' || '/*';
+        var cfPath = '/*';
         return cf.createInvalidation(args.cf_distribution, 'dsadasds' + Math.round(new Date().getTime()/1000), cfPath, function(err, invalidation) {
             if (err){
                 console.log(err);
